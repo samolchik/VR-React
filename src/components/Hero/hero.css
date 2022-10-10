@@ -1,0 +1,244 @@
+.hero {
+    position: relative;
+    padding-left: 58px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__item {
+    position: relative;
+    padding-top: 11px;
+    gap: 58px;
+    z-index: 100;
+}
+
+.hero__vr-photo {
+    max-width: 421px;
+    max-height: 492px;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__item-title {
+    margin-bottom: 24px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    color: #FFF;
+}
+
+.hero__item-describe {
+    margin-bottom: 26px;
+    max-width: 312px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, .85);
+}
+
+.hero__btns {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    cursor: pointer;
+}
+
+.hero__btns-info {
+    padding: 12px 9px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFF;
+    transition: background-color 0.5s ease 0s;
+}
+
+.hero__btns-info--active {
+    background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+    border-radius: 2px;
+    border-color: #C54B8C;
+}
+
+.hero__btns-info:hover,
+.hero__btns-info--active:hover {
+    background: linear-gradient(99.05deg, #791c8e .07%, #ab206a 106.32%);
+    border-radius: 2px;
+    border-color: #C54B8C;
+}
+
+.hero__people {
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;
+    align-items: center;
+}
+
+.hero__people-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero__people-list--black {
+    margin-left: -7px;
+}
+
+.hero__people-list--yellow,
+.hero__people-list--white {
+    margin-left: -6px;
+}
+
+.people-online {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFF;
+}
+
+.people-online__icon {
+    margin-right: 5px;
+}
+
+.hero__vr {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__vr-text {
+    position: absolute;
+    bottom: 13%;
+    max-width: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 48%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.vr-text__title {
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFF;
+}
+
+.vr-text__line {
+    background-color: #FFF;
+    width: 152px;
+    height: 1px;
+}
+
+.vr-text__descr {
+    margin-top: 20px;
+    max-width: 205px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFF;
+}
+
+.hero__ellipse-left {
+    position: absolute;
+    left: 0;
+    bottom: -57%;
+    filter: blur(30px);
+    z-index: 10;
+}
+
+.hero__ellipse-right {
+    position: absolute;
+    right: 0;
+    bottom: -67%;
+    filter: blur(10px);
+    z-index: 20;
+}
+
+@media (max-width: 680px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        padding: 0 16px 24px 16px;
+    }
+
+    .hero__item {
+        text-align: center;
+    }
+
+    .vr-text__title {
+        margin-bottom: 17px;
+        font-size: 16px;
+    }
+
+    .vr-text__line {
+        background-color: #FFF;
+        width: 129px;
+        height: 1px;
+    }
+
+    .vr-text__descr {
+        margin-top: 22px;
+        max-width: 161px;
+        font-size: 9px;
+    }
+
+    .hero__vr-text {
+        bottom: 10%;
+    }
+
+    .hero__item-title,
+    .experience-content__title {
+        margin-bottom: 8px;
+    }
+
+    .hero__item-title {
+        margin-top: 11px;
+        max-width: 100%;
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .hero__people {
+        margin-top: 24px;
+    }
+
+    .hero__btns,
+    .hero__people {
+        justify-content: center;
+        align-self: center;
+    }
+
+    .hero__btns-info--active {
+        padding: 11px 45px;
+    }
+
+    .hero__btns-info--pink {
+        padding: 11px 40px;
+        color: #B936F5;
+        border-radius: 3px;
+        border: 1px solid #B936F5;
+    }
+
+    .hero__btns-info--pink:hover {
+        color: #fff;
+    }
+
+    .hero__item-describe {
+        max-width: 100%;
+    }
+}

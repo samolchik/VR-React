@@ -1,0 +1,48 @@
+.video {
+    padding: 42px 7px 42px 8px;
+}
+
+.video__content {
+    padding: 13px 66px 13px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #534686;
+    border-top-right-radius: 60px;
+    border: inset #883daa;
+}
+
+.video__content-title {
+    max-width: 345px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFF;
+}
+
+.video__content-img {
+    display: flex;
+}
+
+@media (max-width: 680px) {
+
+    .video {
+        padding: 24px 4px 40px 4px;
+    }
+
+    .video__content {
+        padding: 8px 27px 9px 10px;
+    }
+
+    .video__content-img {
+        max-width: 92px;
+    }
+
+    .video__content-title,
+    .headsets__header-title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

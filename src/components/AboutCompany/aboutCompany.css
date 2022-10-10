@@ -1,0 +1,115 @@
+.company {
+    position: relative;
+    padding: 31px 42px 32px 42px;
+    z-index: 10;
+}
+
+.company__item {
+    position: relative;
+    max-width: 456px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company__content-title {
+    margin-bottom: 16px;
+    max-width: 224px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #FFF;
+}
+
+.company__content-description {
+    max-width: 248px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, .85);
+}
+
+.company__advantage {
+    max-width: 175px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.company__advantage-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+    column-gap: 17px;
+}
+
+.advantage-item__name-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 9px;
+    color: #FFF;
+}
+
+.company__ellipse {
+    position: absolute;
+    left: 0;
+    top: -50%;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+@media (max-width: 680px) {
+    .company {
+        padding: 44px 16px 40px 16px;
+    }
+
+    .company__item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .company__content-title {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .company__content-description {
+        max-width: 316px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .company__advantage {
+        max-width: 210px;
+    }
+
+    .advantage-item__name-img {
+        min-width: 50px;
+    }
+
+    .company__content {
+        max-width: 360px;
+        margin-bottom: 18px;
+    }
+
+    .company__advantage-item {
+        align-items: flex-end;
+        justify-content: space-around;
+        row-gap: 18px;
+        column-gap: 20px;
+    }
+
+    .advantage-item__name-title {
+        font-size: 10px;
+        line-height: 12px;
+    }
+ 
+}

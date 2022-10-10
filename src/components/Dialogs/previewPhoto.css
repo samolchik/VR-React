@@ -1,0 +1,169 @@
+.preview-photo {
+    position: fixed;
+    padding: 31px 58px 34px 58px;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    max-width: 854px;
+    width: 100%;
+    max-height: 701px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #010208;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 200;
+}
+
+.page {
+    position: relative;
+    z-index: 100;
+}
+
+.preview-photo__img {
+    margin-bottom: 32px;
+    max-width: 738px;
+    width: 100%;
+    max-height: 488px;
+    height: 100%;
+}
+
+.preview-photo__title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: left;
+    text-decoration-line: underline;
+    color: #FFF;
+}
+
+.preview-photo__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #EFDEDE;
+}
+
+.preview-photo__ellipse-top,
+.preview-photo__ellipse-left,
+.preview-photo__ellipse-right {
+    position: absolute;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+.preview-photo__ellipse-top {
+    top: 0;
+}
+
+.preview-photo__ellipse-left {
+    left: 0;
+    bottom: -50px;
+}
+
+.preview-photo__ellipse-right {
+    right: 0;
+    bottom: -50px;
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.pages {
+
+    width: 83px;
+    height: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212B36;
+    background-color: #FFF;
+    border: 1px solid #DFE3E8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.close__page {
+    position: absolute;
+    align-self: flex-end;
+    right: 10px;
+    top: 10px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.25s ease;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0d0812;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+
+
+@media (max-width: 680px) {
+    .overlay {
+        display: none;
+    }
+
+    .close__page {
+        position: absolute;
+        display: flex;
+        right: 16px;
+        top: 5px;
+        color: #fff;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .preview-photo {
+        padding: 45px 16px 32px 16px;
+        justify-content: flex-start;
+        max-width: 390px;
+        width: 100%;
+        max-height: 570px;
+        height: 100%;
+        top: 10%;
+        right: 50%;
+        transform: translate(50%, -10%);
+    }
+
+    .preview-photo__img {
+        max-width: 354px;
+        width: 100%;
+        max-height: 479px;
+        height: 100%;
+    }
+
+    .preview-photo__title {
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+    .preview-photo__description {
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

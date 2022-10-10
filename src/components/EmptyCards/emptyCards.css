@@ -1,0 +1,10 @@
+.empty-cards {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #C824EC;
+}
